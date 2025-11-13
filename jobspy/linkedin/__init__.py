@@ -321,7 +321,7 @@ class LinkedIn(Scraper):
                 city, state, country = parts
                 country = Country.from_string(country)
                 location = Location(city=city, state=state, country=country)
-            elif len(parts) = 1:
+            elif len(parts) == 1:
                 city = parts
                 country = Country.from_string(country)
                 location = Location(city=city,state = None, country = country)
