@@ -323,8 +323,8 @@ class LinkedIn(Scraper):
                 location = Location(city=city, state=state, country=country)
             elif len(parts) == 1:
                 city = parts
-                country = Country.from_string(country)
-                location = Location(city=city,state = None, country = country)
+                # country = Country.from_string(country)
+                location = Location(city=city,state = None, country = None)
         return location
 
     def _parse_job_url_direct(self, soup: BeautifulSoup) -> str | None:
